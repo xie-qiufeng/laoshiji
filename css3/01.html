@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			[data-in] {
+				color: red;
+			}
+			[data-in = "5"]{
+				font-size:50px;
+			}
+			[data-in ^="c"]{
+				color:darkcyan;
+			}
+			[data-in $="2"]{
+				background-color: gold;
+			}
+			[data-in *="6"]{
+				font-weight:900;
+			}
+			[data-in]:not([data-in^="c"]){
+				font-size:40px;
+			}
+			[data-in = "3"]+p{
+				background-color:navajowhite;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p data-in="1">1</p>
+		<p data-in = "2">2</p>
+		<p data-in="3">3</p>
+		<p data-in="4">4</p>
+		<p data-in="5">5</p>
+		<h3> h3</h3>
+		<p data-in="d62">d62</p>
+		<p data-in="c3">c3</p>
+		<p data-in="c2">c2</p>
+		<p data-in="c1">c1</p>
+		<p data-in="d1>d1</p>
+	</body>
+</html>
